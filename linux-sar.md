@@ -1,6 +1,6 @@
 ---
-title:Linux之sar
-date:2016-10-11
+title: Linux之sar
+date: 2016-10-11
 ---
 一个好的linuxer想要熟悉自己正在玩弄的系统的状态，可不能只看360的悬浮球。linux下查看系统状态的命令多如牛毛！像top，lsof，fdisk，iostat，du，甚至乎cat一下/proc目录下文件，读读这些晦涩难懂的数据也是可以一窥系统全貌的。然而，居然有杀手般的sar命令在此，我们为何不来一发呢！
 

@@ -1,6 +1,6 @@
 ---
-title:unicode utf-8 and encoding
-date:2016-06-20
+title: unicode utf-8 and encoding
+date: 2016-06-20
 ---
 编码总是个问题，尤其是在数据历经不同平台，甚至是不同程序下！今天来捋清楚看似简单的编码问题。
 

@@ -1,6 +1,6 @@
 ---
-title:vimrc之autocmd
-date:2016-10-10
+title: vimrc之autocmd
+date: 2016-10-10
 ---
 有句话说得好，如果EMACS是神的编辑器，那么vim就是编辑器之神了！vim和emacs极佳的扩展性，以及众多活跃的插件，是经常切换多语言编程的利器。那么，vimrc是vimer进阶不得不掌握的战场了！
 

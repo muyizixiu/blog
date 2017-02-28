@@ -1,6 +1,6 @@
 ---
-title:golang将slice转array
-date:2015-10-29
+title: golang将slice转array
+date: 2015-10-29
 ---
 最近写代码，遇到个问题，怎么将一个slice转化为数组。
 

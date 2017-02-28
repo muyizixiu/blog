@@ -1,6 +1,6 @@
 ---
-title:strace 和基友 ltrace
-date:2016-04-26
+title: strace 和基友 ltrace
+date: 2016-04-26
 ---
 正如其字面意思一样，trace即追踪。在操作系统里面，进程是一个相对独立的单位，在不知其源代码的情形下，要想知道一个进程在做些什么，这就是strace和ltrace所干的活了。
 

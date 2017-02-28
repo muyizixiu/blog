@@ -1,6 +1,6 @@
 ---
-title:golang routine调度中的核心设置
-date:2015-10-10
+title: golang routine调度中的核心设置
+date: 2015-10-10
 ---
 观察一下在golang中多个goroutine是怎么调度的，上代码：
 
