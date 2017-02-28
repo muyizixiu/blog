@@ -4,7 +4,7 @@ date: 2016-10-11
 ---
 一个好的linuxer想要熟悉自己正在玩弄的系统的状态，可不能只看360的悬浮球。linux下查看系统状态的命令多如牛毛！像top，lsof，fdisk，iostat，du，甚至乎cat一下/proc目录下文件，读读这些晦涩难懂的数据也是可以一窥系统全貌的。然而，居然有杀手般的sar命令在此，我们为何不来一发呢！
 
-##### sar
+## sar
 超长的用法如下：
 ```
 sar  [ -A ] [ -b ] [ -B ] [ -c ] [ -d ] [ -i interval ] [ -p ] [ -q ] [ -r ] [ -R ] [ -t ] [ -u ] [ -v ] [ -V ] [ -w ] [ -W ] [ -y ] [ -n { DEV | EDEV | NFS | NFSD
@@ -25,7 +25,7 @@ sar  [ -A ] [ -b ] [ -B ] [ -c ] [ -d ] [ -i interval ] [ -p ] [ -q ] [ -r ] [ -
 ```
 其中有[ interval [ count ]参数，当指定这俩个参数事，会以interval秒去查看count次当前的状态。不指定该参数则查看从当天开始到现在时间的历史数据。
 
-###### sar之查看网速
+### sar之查看网速
 ```
 # sar -n DEV
 12:00:01 AM     IFACE   rxpck/s   txpck/s   rxbyt/s   txbyt/s   rxcmp/s   txcmp/s  rxmcst/s

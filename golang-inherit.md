@@ -4,11 +4,11 @@ date: 2015-12-03
 ---
 作为程序员，是很喜欢有对象的。虽然编程思想一般是面向需求，但也要面向对象才行。golang是21世纪的编程语言，函数式编程的思想有，面向对象方式也有。golang可以简单地实现面向对象的几个特征：继承，封装，和接口抽象。
 
-######1.  来自组合的继承
+### 1.  来自组合的继承
 组合是可以实现继承的。
 
 
-#####A
+## A
 ```golang
     type family struct{
         FamilyName string
@@ -20,7 +20,7 @@ date: 2015-12-03
 ```
 在这里，member结构体继承family的属性。有意思的是，golang中的继承只是一个语法糖，A的代码可以等效于：
 
-#####B
+## B
 
     type family struct{
         FamilyName string
