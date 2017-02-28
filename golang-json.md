@@ -1,6 +1,7 @@
 ---
-title:golang json的大小写技巧
-date:2015-10-16
+title: golang json的大小写技巧
+date: 2015-10-16
+---
 golang中json格式有大小写要求，json中小写键名会无法导出，结构体小写也无法导出json对应键名。
 就像这样（撸代码）：
 
