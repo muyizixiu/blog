@@ -6,13 +6,13 @@ date: 2017-02-28
 
 初识ios，便惊讶于objective-C的繁杂，以及浩瀚的API。一开始，犯了心情急迫，高估自己，低看敌方的错误。花了一个小时不多，咕噜吞枣似地把objective-C的语法过了一遍，操之过急地开始学习ios。objective-C的语法跟流行语言相差很大，又有C的黑魔法加持，建议要对C语言有一定了解，才去好好学习objective-C。斯坦福大学出品的IOS开发教程很是经典，借助于它，我对ios的整体才有了一定的认识，十分感激。
 
-######UI篇
+###### UI篇
 UI和布局是入门的好去处，熟悉label，Button，TextField，switch，tableview，scrollview等常用的view的基本属性，其余的留待工作中加深体验。
 
-######事件篇
+###### 事件篇
 手势和MVC赋予UI和布局以活力，使你的app开始有了生命力。MVC模式理解简单，认真实践这一模式却要求开发者责任和技巧并存。这个时候练习就显得相当地重要了，跟着Apple[官方的教程](https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html)走了一遍，也是相当划得来的买卖。
 
-######网络和线程
+###### 网络和线程
 
 
 

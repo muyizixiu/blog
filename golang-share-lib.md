@@ -10,7 +10,7 @@ value值有：
 1. **shared** 这是golang提供给自身调用的共享库。
 2. **c-shared** 用来生成c的共享库，这是极具诱惑力的，意味着golang可以写给其余语言调用的库了，例如python里面的[module](https://blog.filippo.io/building-python-modules-with-go-1-5/),甚至php的扩展也可以由golang来实现了。
 
-###talk is cheap
+### talk is cheap
 
 我当前目录下有：
 ```

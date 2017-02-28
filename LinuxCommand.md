@@ -5,7 +5,7 @@ date: 2015-12-15
 对于绝大多数应用程序，系统调用（syscall）是被封装隐藏好了的，但大多数函数操作都有涉及的。文件读写，io操作，网络请求等等属于操作系统调度的操作都跟操作系统密切相关，所以对于程序（尤其是一定规模的程序），其性能，状态的分析，不仅仅是从代码层面上进行分析，也要注重在操作系统层面上进行分析。linux系统提供的很多命令，在这一方面，是极其厉害的。
 
 
-######一. lsof （list open files）
+######  一. lsof （list open files）
 ```
 Useage：
 
@@ -31,7 +31,7 @@ Useage：
 linux中一切皆文件（宛如js中一切皆对象），lsof 命令在linux中就不仅仅局限于文件了，可以用于分析网络端口（忘掉netstat命令吧），ip连接，文件读写等操作
 
 
-######二. tcpdump
+###### 二. tcpdump
 
 抓包素来很酷，极具Geek范，在linux命令行下也有niubility的抓包命令：tcpdump
 
@@ -52,15 +52,15 @@ tcpdump 重要的几个关键字和参数：
 具体用法如下：
 ```
 
-\#tcpdump host localhost  
+\# tcpdump host localhost  
 这是指定为本机回环地址的情形，在没有指定网卡（无参数-i）的情形下，自动指定为第一块网卡，在这里，如果回环地址不是第一块网卡，是不会有数据的。
-\#tcpdump dst localhost -i lo
+\# tcpdump dst localhost -i lo
 抓取所有流向本机回环地址的数据，且指定网卡为回环地址的网卡，（lo是网卡名称，可用ifconfig命令查看）
-\#tcpdump host localhost or dst 192.168.1.1
+\# tcpdump host localhost or dst 192.168.1.1
 and 和or 的与或逻辑是支持的
 ```
 
-#####三. expect
+##### 三. expect
 
 还在为命令行交互而烦恼吗，还在讨厌密码太长不想输入吗？
 
@@ -70,7 +70,7 @@ expect本身就像一个伪shell一样，所以能够提供交互功能。
 
 简单的脚本示范
 ```
-#!/usr/bin/expect
+# !/usr/bin/expect
 spawn echo "hello world"
 interact
 ```
@@ -86,14 +86,14 @@ interact关键字是指：将交互还给shell。
 
 expect 重要的交互命令
 ```
-#!/usr/bin/expect
-spawn passwd root #执行更改密码的命令
-expect "password" #expect 接收进程中的输出，匹配到'password'存在时，执行下一条语句
-send "hello_world"#向进程中输入数据。这里就是你的新密码了
+# !/usr/bin/expect
+spawn passwd root # 执行更改密码的命令
+expect "password" # expect 接收进程中的输出，匹配到'password'存在时，执行下一条语句
+send "hello_world"# 向进程中输入数据。这里就是你的新密码了
 exit
 ```
 
-#####四. ps (process status)
+##### 四. ps (process status)
 此ps非adobe 公司出品的ps，而是linux下查看进程相关状态的利器。同时，ps命令涉及了太多的参数，也为其使用带来了疑惑。在编写一些涉及处理程序的脚本时，ps几乎是必不可少的了。
 
 ps参数基本格式有三种：
@@ -118,5 +118,5 @@ ps参数基本格式有三种：
 
 输出格式有pid,state,tname,time,command等等，只需在-O 或者 o参数下指定就行了；
 ```
-ps -aux o command,state,time   ##可以输出启动命令，状态，时间片信息
+ps -aux o command,state,time   ## 可以输出启动命令，状态，时间片信息
 ```
