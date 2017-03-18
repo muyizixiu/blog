@@ -13,6 +13,7 @@ autocmd的定义
 :au[tocmd] [group] {event} {pat} [nested] {cmd}
 ```
 关键字au[tocmd]是少不了的，{group}是组名称，用于将当前所定义的注册命令归属于一个组，缺省的话默认是当前组，当前组可以用:augroup查看。event是指事件：
+
 ```
 名字                    激活条件 
 
@@ -134,6 +135,7 @@ autocmd的定义
 |User|                  和 ":doautocmd" 一起使用
 
 ```
+
 引用自[VIMCDOC](http://vimcdoc.sourceforge.net/doc/autocmd.html#autocmd-events)。
 
 模式匹配则是对当前文本类型的一种匹配，支持通配符，eg: *.php匹配php文本。
@@ -141,3 +143,21 @@ autocmd的定义
 
 {cmd}就是我们在vim命令模式下面经常使用的了，复杂的动作可以使用函数来处理。
 
+##Example
+在我的vimrc脚本中，利用了autocmd在保存的时候对php文件进行语法检查。
+```
+ au BufWrite *.php call phpSyntaxCheck()
+```
+这里的phpSyntaxCheck是自定义的vim函数，call phpSyntaxCheck()调用这个函数，函数里面调用外部的php -l 检查文件，匹配到错误则输出
+
+另外一个给我带来很大便利的是，新建文件的时候，加入一些定制的头部。
+
+```
+au BufNewFile *.php call InsertPHPHeader()
+
+func InsertPHPHeader()
+	call append(0,"<?php")
+endf
+```
+
+这是一个简单的例子，定义了一个函数，插入php文件的头部一些字符串。
