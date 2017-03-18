@@ -5,8 +5,8 @@ date: 2017-03-18
 前面我有两篇文章，关于vim的[入门](http://muyizixiu.cn/2015/12/08/vim/)和[autocmd](http://muyizixiu.cn/2016/10/10/vim-autocmd/)，随着对vim使用的更加深入，vim的配置便不得不提了！
 
 ## keycodes
-在vim脚本中，键的映射总是伴随着一些奇怪的符号！例如\<TAB\>,\<ESC\>这些从字面上可以揣测出来的tab键和esc键，还有些难以猜测的，\<S-...\>,\<A-...\>,\<CR\>。这些事vim的keycode。
-\<S-...\>和\<A-...\>是组合键，前者是指shift键组合其余的按键，后者则是Alt键的组合。例如\<S-r\>,则是指shit组合字母r键。
+在vim脚本中，键的映射总是伴随着一些奇怪的符号！例&lt;TAB$gt;,&lt;ESC&gt;这些从字面上可以揣测出来的tab键和esc键，还有些难以猜测的，&lt;S-...&gt;,&lt;A-...&gt;,&lt;CR&gt;。这些事vim的keycode。
+&lt;S-...&gt;和&lt;A-...&gt;是组合键，前者是指shift键组合其余的按键，后者则是Alt键的组合。例如&lt;S-r&gt;,则是指shit组合字母r键。
 查看每一个详细的按键，在命令模式下，输入:h keycodes 即可
 
 ## map
