@@ -1,6 +1,8 @@
 ---
 title:  channel!channel!
 date:  2016-01-20
+categories:
+- 技术
 ---
 进程之间的通信是很复杂的，线程之间共享全局数据则妙的多。而goroutine之间的通信依靠的channel就是妙不可言了。
 

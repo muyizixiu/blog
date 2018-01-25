@@ -1,6 +1,8 @@
 ---
 title: vim之键映射
 date: 2017-03-18
+categories:
+- 技术
 ---
 前面我有两篇文章，关于vim的[入门](http://muyizixiu.cn/2015/12/08/vim/)和[autocmd](http://muyizixiu.cn/2016/10/10/vim-autocmd/)，随着对vim使用的更加深入，vim的配置便不得不提了！
 
