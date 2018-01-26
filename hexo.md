@@ -43,4 +43,4 @@ hello/publics/就是你的网页了，hexo generate之后，这里便有所有�
 在下载下来的主题文件夹里面也会有_config.yml的配置文件，实现各个主题个性化！我使用的是一款简单的，文字友好型的[主题](https://github.com/gaoryrt/hexo-theme-pln)!
 
 5. 我的策略
-hexo generate依赖工程和你的md文件，生成了静态的网页，网页目录是可以脱离于工程存在的，同时，我也将md的文件分离了出来，用git进行管理，这样，我的文章便在github上保留了[一份源](https://github.com/muyizixiu/blog)，可以脱离这个工程进行写作。同时我将工程中的文章目录(hello/source/_posts),指向我的github地址，每次新的文章被提交时，我pull下来，同时用hexo generate生成静态的网页，再将其复制到webserver所指定的地址。当然，上面的操作已经脚本化了，简单地执行脚本即可！
+hexo generate依赖工程和你的md文件，生成了静态的网页，网页目录是可以脱离于工程存在的，同时，我也将md的文件分离了出来，用git进行管理，这样，我的文章便在github上保留了[一份源](https://github.com/muyizixiu/blog)，可以脱离这个工程进行写作。同时我将工程中的文章目录(hello/source/_posts),指向我的github地址，每次新的文章被提交时，由github的webhook触发远程脚本.脚本将文章pull下来，同时用hexo generate生成静态的网页，再将其复制到webserver所指定的地址。
