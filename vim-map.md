@@ -4,7 +4,7 @@ date: 2017-03-18
 categories:
 - 技术
 ---
-前面我有两篇文章，关于vim的[入门](http://muyizixiu.cn/2015/12/08/vim/)和[autocmd](http://muyizixiu.cn/2016/10/10/vim-autocmd/)，随着对vim使用的更加深入，vim的配置便不得不提了！
+前面我有两篇文章，关于vim的[入门](http://muyizixiu.cn/vim/)和[autocmd](http://muyizixiu.cn/vim-autocmd/)，随着对vim使用的更加深入，vim的配置便不得不提了！
 
 ## keycodes
 在vim脚本中，键的映射总是伴随着一些奇怪的符号！例&lt;TAB&gt;,&lt;ESC&gt;这些从字面上可以揣测出来的tab键和esc键，还有些难以猜测的，&lt;S-...&gt;,&lt;A-...&gt;,&lt;CR&gt;。这些事vim的keycode。
