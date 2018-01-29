@@ -5,8 +5,7 @@ categories:
 - 技术
 - mysql
 ---
-
-#bin-log备份脚本
+# bin-log备份脚本
 
 
 ## mysql bin log
