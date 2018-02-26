@@ -5,11 +5,10 @@ categories:
 - 技术
 ---
 
-# curl追踪http请求跳转
 在网路中，http(s)跳转是常见的一种行为，例如：301永久重定向，302临时重定向。而curl是一种命令行发起请求的工具。在工作中，我们项目遇到一个难以理解的跳转行为，最终利用curl和nginx配置文件，理解了该跳转行为。
 
 ## 问题描述
-项目中存在一个老的资源地址 www.old.com, 仅支持http访问。新的需求要求将一个新的地址 www.new.com, 无论http/https都要跳转至 www.old.com. 需求相对较为简单，团队内部开发人员采用的方式为：
+项目中存在一个老的资源地址 www.old.com, 仅支持http访问。新的需求要求将一个新的地址 www.new.com, 无论http/https都要跳转至 www.old.com. 需求相对较为简单，团队内部开发人员t讨论的实现方式为：
 
 1. 将 https://www.new.com 在 nginx 中 rewrite 至 http://www.new.com.
 2. 在 http://www.new.com 的虚拟 server 中使用 nginx 的 proxy_pass 代理至 http://www.old.com.
