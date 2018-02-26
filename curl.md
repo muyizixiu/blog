@@ -57,5 +57,5 @@ curl -A PC -I -L https://www.new.com
 curl -v -A PC -I -L http://www.new.com
 # -v 选项指定查看请求详细信息
 ```
-在接下来的详细信息中，我们能观察到每次跳转请求的服务器地址。因为 http://www.new.com 并非跳转至 http://www.old.com, 而是代理（即 proxy_pass ）。无法观察挑任何跳转信息，而在服务器响应的 response 中，我们观察到，http header 中有字段 X-Powerd-By: PHP/5.60. 判断出该跳转乃是目标地址的 php 脚本行为。
+在接下来的详细信息中，我们能观察到每次跳转请求的服务器地址。因为 http://www.new.com 并非跳转至 http://www.old.com, 而是代理（即 proxy_pass ）。无法观察出任何跳转信息，而在服务器响应的 response 中，我们观察到，http header 中有字段 X-Powerd-By: PHP/5.60. 判断出该跳转乃是目标地址的 php 脚本行为。
 
